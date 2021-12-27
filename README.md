@@ -9,7 +9,7 @@
 
 # The app running on localhost:4545
 
-**Also application is deployed on heroku:** https://getir-assignment-maksym.herokuapp.com/
+**Also application is deployed on heroku:**
 
 
 
