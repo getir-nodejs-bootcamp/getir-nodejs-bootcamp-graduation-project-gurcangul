@@ -1,26 +1,48 @@
-# Getir Node.js Bootcamp Graduation Project
-## The Challenge
-We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.
-Requirements
-- The code should be written in Node.js using express framework
-- The endpoint should just handle HTTP POST requests.
-- The application should be deployed on AWS or Heroku. You don’t need to use any API Gateway, Load Balancers or any other layer than the developed application.
-- The up to date repo should be publicly available in Github, Bitbucket or equivalent.
+# Getir Node.js Bootcamp Graduation Project Gürcan Gül
 
-## Deliverables
-- The public repo URL which has the source code of the project, and a set of instructions if there is any project specific configurations needed to run the project.
-- The public endpoint URL of the deployed API which is available for testing.
 
-## Worth Highlighting
-We expect these requirements can be delivered in 3 to 6 hours. However, it is not a speed test. Take your time! Your feedback on how much actual time you were needed to deliver the task will be very helpful but will not be used for the evaluation.
-You are free to use any libraries to deliver the needed functionality, but be prepared to explain other solutions that you would have implemented if you have more time.
+## To  deploy application locally:
 
-## Crucial Points
-- Delivering a Working RESTful API.
-- Clean and Production Ready Code
-- Error Handling
-- Comments and Documentation
-- Unit and/or Integration Tests (Jest is preferable but Mocha also works)
-- Avoid Over Engineering
+* `npm install`
+* `npm start` 
+* `npm run test` 
 
-Good luck with this assignment! Try to make good use of this task to demonstrate and show off your coding skills. If you have any questions, don’t hesitate to ask your contact person within Getir.
+# The app running on localhost:4545
+
+**Also application is deployed on heroku:** https://getir-assignment-maksym.herokuapp.com/
+
+
+
+Method: `POST`
+
+**The request payload will include a JSON with 4 fields.**
+
+```json
+{
+    "startDate": "2016-01-26",
+    "endDate": "2018-02-02",
+    "minCount": 2700,
+    "maxCount": 3000
+ 
+}
+```
+
+**Response payload should have 3 main fields:**
+
+```json
+{
+    "code":0,
+    "msg":"Success",
+    "records":[
+{
+    "key":"TAKwGc6Jr4i8Z487",
+    "createdAt":"2017-01-28T01:22:14.398Z",
+    "totalCount":2800
+},
+{
+    "key":"NAeQ8eX7e5TEg7oH",
+    "createdAt":"2017-01-27T08:19:14.135Z",
+    "totalCount":2900
+}
+]
+```
