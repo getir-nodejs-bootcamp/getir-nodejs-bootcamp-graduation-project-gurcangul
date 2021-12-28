@@ -10,8 +10,7 @@
 # The app running on localhost:4545
 
 **Also application is deployed on heroku:** 
-
-
+https://graduation-project-gurcan-gul.herokuapp.com/
 
 Method: `POST`
 
